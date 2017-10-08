@@ -1,8 +1,8 @@
 {
-  "name": "simple-slides-components",
-  "version": "1.0.0",
-  "description": "Simple slides vue.js components",
-  "main": "dist/SlidesComponents.js",
+  "name": "simple-slider-components",
+  "version": "1.0.0-beta.1",
+  "description": "Simple slider vue.js components",
+  "main": "dist/simpleSliderComponents.js",
   "files": ["dist"],
   "scripts": {
     "dev": "poi",

@@ -1,4 +1,4 @@
-# Simple Slides Components
+# Simple Slider Components
 
 ## Contributing
 

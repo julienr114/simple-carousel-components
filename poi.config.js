@@ -1,7 +1,7 @@
 module.exports = {
-  entry: './SlidesComponents.vue',
+  entry: './main.js',
   filename: {
-    js: 'SlidesComponents.js'
+    js: 'simpleSliderComponents.js'
   },
   removeDist: true,
   sourceMap: false,
