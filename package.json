@@ -1,0 +1,22 @@
+{
+  "name": "simple-slides-components",
+  "version": "1.0.0",
+  "description": "Simple slides vue.js components",
+  "main": "dist/SlidesComponents.js",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "poi",
+    "build": "poi build"
+  },
+  "keywords": [
+    "vue.js",
+    "components",
+    "slides",
+    "carousel"
+  ],
+  "author": "julienr114@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "poi": "^9.3.10"
+  }
+}
