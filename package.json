@@ -1,8 +1,8 @@
 {
-  "name": "simple-slider-components",
+  "name": "simple-carousel-components",
   "version": "1.0.0-beta.1",
-  "description": "Simple slider vue.js components",
-  "main": "dist/simpleSliderComponents.js",
+  "description": "Simple carousel vue.js components",
+  "main": "dist/simpleCarouselComponents.js",
   "files": ["dist"],
   "scripts": {
     "dev": "poi",

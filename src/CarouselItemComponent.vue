@@ -1,32 +1,39 @@
-<script>
-  export default {
-    props: {
-      index: Number,
-      opacity: {
-        type: Number,
-        default: 1
-      }
-    },
-    computed:  {
-      transition () {
-        if (this.$parent.direction) {
-          return 'slide-' + this.$parent.direction
-        }
-      },
-      visible () {
-        return this.index === this.$parent.index
-      }
-    }
-  }
-</script>
-
 <template>
   <transition :name="transition">
-    <div v-show="visible" :style="{opacity: opacity}">
+    <div v-show="visible">
       <slot></slot>
     </div>
   </transition>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        index: this.findIndex()
+      }
+    },
+    computed: {
+      visible () {
+        return this.index === this.$parent.currentIndex
+      },
+      transition () {
+        if (this.$parent.direction) {
+          return 'slide-' + this.$parent.direction
+        }
+      }
+    },
+    methods: {
+      findIndex () {
+        for (let [index, val] of this.$parent.$children.entries()) {
+          if (val._uid === this._uid) {
+            return index
+          }
+        }
+      }
+    }
+  }
+</script>
 
 <style>
   .slide-right-enter-active {

@@ -1,2 +1,2 @@
-exports.SliderComponent = require('./src/SliderComponent.vue');
-exports.SlideComponent = require('./src/SlideComponent.vue');
+exports.SliderComponent = require('./src/CarouselComponent.vue');
+exports.SlideComponent = require('./src/CarouselItemComponent.vue');
