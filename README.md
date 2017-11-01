@@ -1,5 +1,9 @@
 # Simple Slider Components
 
+## Todo
+- Add some style
+- Make Draggable
+
 ## Contributing
 
 1. Fork this repository
